@@ -3,9 +3,13 @@
 *
 *  I declare that this assignment is my own work in accordance with Seneca's
 *  Academic Integrity Policy:
+* 
 *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
-*
+* 
 *  Name: Jim Aminu  Student ID: 131301236  Date: 11/04/2025
+*
+*  Vercel App (Deployed) Link: https://web422-next-js-app.vercel.app
+*
 ********************************************************************************/
 
 import useSWR from "swr";

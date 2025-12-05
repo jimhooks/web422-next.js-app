@@ -3,9 +3,13 @@
 *
 *  I declare that this assignment is my own work in accordance with Seneca's
 *  Academic Integrity Policy:
+* 
 *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+* 
+*  Name: Jim Aminu  Student ID: 131301236  Date: 11/04/2025
 *
-*  Name: Jim Aminu  Student ID: 131301236  Date: 11/26/2025
+*  Vercel App (Deployed) Link: https://web422-next-js-app.vercel.app
+*
 ********************************************************************************/
 
 import { Container, Row, Col, Button } from "react-bootstrap";
@@ -13,19 +17,19 @@ import { useAtom } from "jotai";
 import { favouritesAtom } from "@/store";
 import { useState, useEffect } from "react";
 
-// 🔥 NEW IMPORTS (Assignment 3)
+
 import { addToFavourites, removeFromFavourites } from "@/lib/userData";
 
 export default function BookDetails({ book, workId, showFavouriteBtn = true }) {
   const [favouritesList, setFavouritesList] = useAtom(favouritesAtom);
   const [showAdded, setShowAdded] = useState(false);
 
-  // 🔥 NEW useEffect (Assignment 3)
+
   useEffect(() => {
     setShowAdded(favouritesList?.includes(workId));
   }, [favouritesList, workId]);
 
-  // 🔥 UPDATED favouritesClicked (Assignment 3)
+
   async function favouritesClicked() {
     let updatedList = [];
 

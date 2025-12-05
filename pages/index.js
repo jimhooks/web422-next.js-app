@@ -8,7 +8,7 @@
 * 
 *  Name: Jim Aminu  Student ID: 131301236  Date: 11/04/2025
 *
-*  Vercel App (Deployed) Link: _________________________________________________
+*  Vercel App (Deployed) Link: https://web422-next-js-app.vercel.app
 *
 ********************************************************************************/
 

@@ -16,7 +16,7 @@ export default function Register() {
 
     try {
       await registerUser(user, password, password2);
-      router.push("/login");   // redirect to login after success
+      router.push("/login");   
     } catch (err) {
       setWarning(err.message);
     }
@@ -33,7 +33,7 @@ export default function Register() {
 
       <br />
 
-      {/* Error Alert */}
+      {}
       {warning && (
         <>
           <Alert variant="danger">{warning}</Alert>
@@ -56,7 +56,7 @@ export default function Register() {
 
         <br />
 
-        {/* Password */}
+        {}
         <Form.Group>
           <Form.Label>Password:</Form.Label>
           <Form.Control
@@ -70,7 +70,7 @@ export default function Register() {
 
         <br />
 
-        {/* Confirm Password */}
+        {}
         <Form.Group>
           <Form.Label>Confirm Password:</Form.Label>
           <Form.Control
@@ -84,7 +84,7 @@ export default function Register() {
 
         <br />
 
-        {/* Submit button */}
+        {}
         <Button variant="primary" type="submit">
           Register
         </Button>

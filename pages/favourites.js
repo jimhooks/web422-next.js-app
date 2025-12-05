@@ -1,9 +1,16 @@
 /*********************************************************************************
 *  WEB422 – Assignment 3
 *
-*  Name: Jim Aminu  Student ID: 131301236  Date: 11/26/2025
+*  I declare that this assignment is my own work in accordance with Seneca's
+*  Academic Integrity Policy:
+* 
+*  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+* 
+*  Name: Jim Aminu  Student ID: 131301236  Date: 11/04/2025
+*
+*  Vercel App (Deployed) Link: https://web422-next-js-app.vercel.app
+*
 ********************************************************************************/
-
 import { useAtom } from "jotai";
 import { favouritesAtom } from "@/store";
 import { Row, Col } from "react-bootstrap";
@@ -13,9 +20,7 @@ import BookCard from "@/components/Bookcard";
 export default function Favourites() {
   const [favouritesList] = useAtom(favouritesAtom);
 
-  // 🔥 REQUIRED FIX (Assignment step 4)
-  // Prevents the page from incorrectly showing "Nothing Here"
-  // while favourites are still loading from the API
+  
   if (!favouritesList) return null;
 
   if (favouritesList.length === 0) {

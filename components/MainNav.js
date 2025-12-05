@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export default function MainNav() {
   const router = useRouter();
-  const [token, setToken] = useState(null);   // <-- FIX: State instead of SSR call
+  const [token, setToken] = useState(null);   
 
   function logout() {
     removeToken();
@@ -17,18 +17,18 @@ export default function MainNav() {
   }
 
   useEffect(() => {
-  // Runs when component mounts AND whenever route changes
+
   const handleRouteChange = () => {
     setToken(readToken());
   };
 
-  // Run initially
+  
   handleRouteChange();
 
-  // Listen for route changes
+  
   router.events.on("routeChangeComplete", handleRouteChange);
 
-  // Cleanup
+  
   return () => {
     router.events.off("routeChangeComplete", handleRouteChange);
   };
@@ -46,15 +46,15 @@ export default function MainNav() {
           <Navbar.Toggle aria-controls="main-navbar" />
           <Navbar.Collapse id="main-navbar">
 
-            {/* LEFT NAV */}
+            {}
             <Nav className="me-auto">
               <Nav.Link as={Link} href="/about" passHref>About</Nav.Link>
             </Nav>
 
-            {/* RIGHT NAV */}
+            {}
             <Nav>
 
-              {/* Logged in */}
+              {}
               {token && (
                 <NavDropdown title={token.userName} id="user-dropdown">
                   <NavDropdown.Item as={Link} href="/favourites" passHref>
@@ -69,7 +69,7 @@ export default function MainNav() {
                 </NavDropdown>
               )}
 
-              {/* Logged OUT */}
+              {}
               {!token && (
                 <Nav.Link as={Link} href="/register" passHref>
                   Register
