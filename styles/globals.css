@@ -1,0 +1,115 @@
+/* ================================
+   GLOBAL STYLES – CERULEAN THEME
+   ================================ */
+
+body {
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1a1a1a;
+  padding-top: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #2FA4E7 !important; /* Cerulean blue */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #f8f9fa !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #bfe4ff !important; /* lighter blue hover */
+}
+
+/* PAGE HEADER / TITLES */
+h2, h3, h5 {
+  font-weight: 600;
+  color: #2FA4E7;
+}
+
+/* CARDS */
+.card.bg-light,
+.card.mb-3 {
+  background: #ffffff !important;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #212529;
+  padding: 1rem 0;
+}
+
+/* TABLES */
+.table {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.table thead th {
+  background-color: #2FA4E7;
+  color: #fff;
+  border: none;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e6f3ff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* PAGINATION */
+.pagination {
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.pagination .page-item .page-link {
+  color: #2FA4E7;
+  border-radius: 6px;
+  margin: 0 4px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #2FA4E7;
+  color: #fff;
+  border-color: #2FA4E7;
+}
+
+/* IMAGES */
+img.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* LINKS */
+a {
+  color: #2FA4E7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #157ab5;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: #2FA4E7;
+  padding: 20px;
+  font-weight: 500;
+}
