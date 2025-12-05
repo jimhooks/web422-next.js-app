@@ -10,7 +10,7 @@ export default function RouteGuard({ children }) {
   const [favouritesList, setFavouritesList] = useAtom(favouritesAtom);
 
   // Pages that do NOT require login
-  const PUBLIC_PATHS = ["/", "/login", "/register", "/about"];
+  const PUBLIC_PATHS = ["/login", "/register", "/about"];
 
   async function updateAtom() {
     setFavouritesList(await getFavourites());
